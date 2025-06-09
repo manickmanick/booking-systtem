@@ -18,31 +18,9 @@ Lets take a look inside the `src` folder
 
 `utils` -> contains helper classes
 
-
-Inside the `src/config` folder create a file called `config.json` and write the following code.
+- go inside the `src` folder and execute the following command : 
 
 ```
-{
-  "development": {
-    "username": "root",
-    "password": "your password",
-    "database": "testDB",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
+npx sequelize-cli init
 ```
+By executing the above comand,you get migrations and seeders folder with a config.json in cofig folder.
